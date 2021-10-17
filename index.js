@@ -34,13 +34,13 @@ for (var i = 0; i < boxElements.length; i++) {
         if (boxNumWasClicked === random) {
             messageE1.textContent = "Correct!"
             wins++
-            winsE1.textContent = "Wins" + wins
+            winsE1.textContent = "Wins: " + wins
         }
         else {
             var random = Math.floor(Math.random() * 3);
             messageE1.textContent = messages[random];
             losses++
-            lossesE1.textContent = "Losses" + losses
+            lossesE1.textContent = "Losses: " + losses
         }
 
     }
